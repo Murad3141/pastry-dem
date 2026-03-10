@@ -1,0 +1,105 @@
+.about {
+  background: var(--color-dark);
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.about__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
+}
+
+.about__text {}
+
+.about__para {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.9;
+  color: rgba(250, 246, 240, 0.6);
+  margin-bottom: 1.2rem;
+}
+
+.about__stats {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(201, 169, 110, 0.15);
+}
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.about__stat-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  line-height: 1;
+}
+.about__stat-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(250, 246, 240, 0.4);
+}
+
+/* Visual */
+.about__visual {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.about__card {
+  padding: 1.8rem;
+  border: 1px solid rgba(201, 169, 110, 0.12);
+  background: rgba(201, 169, 110, 0.03);
+  transition: border-color var(--transition), background var(--transition), transform var(--transition);
+}
+.about__card:hover {
+  border-color: rgba(201, 169, 110, 0.3);
+  background: rgba(201, 169, 110, 0.06);
+  transform: translateX(6px);
+}
+.about__card-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+.about__card-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-cream);
+  margin-bottom: 0.5rem;
+}
+.about__card-desc {
+  font-size: 0.82rem;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgba(250, 246, 240, 0.5);
+}
+
+@media (max-width: 900px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .about__stats { gap: 1.5rem; }
+  .about { padding: 5rem 0; }
+}

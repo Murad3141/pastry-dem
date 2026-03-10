@@ -1,0 +1,159 @@
+@media (min-width:1930px) {
+    .rotator_nav.rotator-prev {
+        /* left: -100px !important */
+    }
+}
+
+@media (min-width:2200px) {
+    .rotator_nav.rotator-prev {
+        /* left: -150px !important */
+    }
+}
+
+@media (min-width:2300px) {
+    .rotator_nav.rotator-prev {
+        /* left: -200px !important */
+    }
+
+    .product-img img {
+        min-width: 100%
+    }
+}
+
+@media (max-width:1600px) {
+    .fixed_nav {
+        left: 2.5rem
+    }
+}
+
+@media (max-width:1400px) {
+    .fixed_nav {
+        display: none
+    }
+
+    .product-btn-hide.visible {
+        display: block
+    }
+
+    .cart-modal {
+        padding: 3.5rem 3rem
+    }
+}
+
+@media (min-width: 821px) and (max-width:1366px) {
+    html {
+        font-size: 8px
+    }
+
+    .cart-info {
+        padding: 4rem;
+        width: 39%;
+    }
+
+    .cart-item {
+        padding: 2rem 2rem 2rem 3rem
+    }
+
+    .ci_price {
+        font-size: 1.8rem
+    }
+
+    .cart-modal__item {
+        padding: 4rem 2rem 2rem
+    }
+
+    .cart-modal__item-price {
+        font-size: 1.6rem
+    }
+
+    .cart-modal__item-img {
+        width: 12.5rem;
+        height: 7.5rem
+    }
+
+    .cart-modal__item-text {
+        width: calc(100% - 12.5rem);
+        padding-left: 1.5rem
+    }
+
+    .cart-modal__bot .cart-info__price-item {
+        margin-bottom: 1.5rem
+    }
+
+    .cart-modal {
+        padding: 3.5rem 2rem 2.5rem;
+        width: 40rem
+    }
+}
+
+@media (min-width: 821px) and (max-width:1023px) {
+
+    .cart-info__price-item,
+    .cart-item__name {
+        font-size: 11px
+    }
+
+    .cart-item__price {
+        font-size: 1.8rem
+    }
+
+    .title-section {
+        font-size: calc(2rem + 4 * ((100vw - 320px ) / 320 ));
+    }
+
+    .input_st {
+        
+        font-size: 12px
+    }
+
+    .about-content__text {
+        width: 49%;
+        padding-top: 0
+    }
+
+    /* .fp-tableCell,
+    .section {
+        height: auto !important
+    } */
+
+    .contact-list__item {
+        padding: 1.5rem 2rem 0 0
+    }
+
+    .contact-group__form,
+    .contact-group__text {
+        width: 49%
+    }
+
+    .fullpage-wrapper .section {
+        /* padding: 8rem 0; */
+        min-height: 0
+    }
+
+    .fullpage-wrapper .section-head {
+        /* padding: 8rem 0 13rem */
+    }
+
+    .about-content__media {
+        height: auto
+    }
+
+    .description-item__title span {
+        font-size: 2.2rem
+    }
+
+    .cart-item__remove {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem
+    }
+
+    .cart-item__product {
+        width: 100%;
+        padding-bottom: 1.5rem
+    }
+
+    .logo__decor2 {
+        display: none
+    }
+}
